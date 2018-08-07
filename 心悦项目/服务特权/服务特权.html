@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/fuwutequan.css">
+  <script src="jQuery/jquery-1.12.4.js"></script>
+  <script src="js/fuwutequan.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div class="top" id="top">
+  <!--头部版心-->
+  <div class="w">
+    <!--点击出现登陆窗-->
+    <span id="login">您好,请登陆</span>
+    <!--QQ-login是大盒子-->
+    <div id="QQ-login" >
+      <ul id="login-box1">
+        <li id="qq-denglu" ><p>QQ登录</p></li>
+        <li id="wx-denglu"><p>微信登录</p></li>
+        <li id="gaunbi">×</li>
+      </ul>
+      <div id="login-box2">
+        <div id="login-box3">
+          <img src="img/qq-icon.png" alt="">
+          <p>QQ、微信将互为独立的体系帐号<br>
+            分别独立获得成长值、体系资格、等级权益。</p>
+        </div>
+        <!--右边二维码-->
+        <div id="QQ-ewm">
+          <p class="aq-login">快速安全登录</p>
+          <p class="qq-sj">请使用<a href="javascript:void(0)">QQ手机版</a>扫描二维码，<br>
+            安全登录，防止盗号。 </p>
+          <!--<img id="login-ewm" src="二维码.png" alt="">-->
+          <div id="login-box4">
+            <span id="login-ewm" ></span>
+            <img id="login-JLT" src="img/登陆精灵图.png" alt="">
+          </div>
+          <ul id="zhuCe" >
+            <li><a href="javascript:void(0)">帐号密码登录  |</a></li>
+            <li><a href="javascript:void(0)">注册新帐号  |</a></li>
+            <li> <a href="javascript:void(0)">意见反馈</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--QQ登陆页面的结束-->
+      <!--微信登陆页面的开始-->
+
+      <div id="wx-BigBox">
+        <div id="wx-box1">
+          <img src="img/wx-icon.png" alt="">
+          <p>QQ、微信将互为独立的体系帐号<br>
+            分别独立获得成长值、体系资格、等级权益。</p>
+        </div>
+        <!--右边二维码-->
+        <div id="wx-ewm">
+          <p class="wx-login">安全登录,防止被盗</p>
+          <span id="wxEwm"></span>
+        </div>
+        <div id="tuoYuan">
+          请使用微信扫描二维码登录    <br>
+          “心悦俱乐部”
+        </div>
+      </div>
+    </div>
+    <!--微信登陆页面的开始-->
+    <!--遮罩层-->
+    <div class="mask"></div>
+    <!--特权地图展开及收回    开始-->
+    <div id="map">
+      <span>
+        <a href="javascript:void(0)">特权地图</a>
+      </span>
+      <div id="jianxi"></div>
+      <div class="hide" id="tequanditu" >
+        <ul>
+          <li>生活特权</li>
+          <li>
+            <a href="javascript:void(0)">京东购物优惠福</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">深航专享福利</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">悦享绿钻</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">心悦观影特权</a>
+          </li>
+        </ul>
+        <ul>
+          <li>游戏特权</li>
+          <li>
+            <a href="javascript:void(0)">心悦精品推荐</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">心悦手游专区</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">心悦新游专区</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">心悦页游专区</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">游戏礼包</a>
+          </li>
+        </ul>
+        <ul>
+          <li>服务特权</li>
+          <li>
+            <a href="javascript:void(0)">会员专线</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">心悦限时处理</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">被盗找回</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">误操作回复</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">点亮尊贵图标</a>
+          </li>
+        </ul>
+        <ul>
+          <li>其他</li>
+          <li><a href="javascript:void(0)">个人中心</a></li>
+          <li><a href="javascript:void(0)">心悦任务</a></li>
+          <li><a href="javascript:void(0)">心悦体系</a></li>
+          <li><a href="javascript:void(0)">召唤心悦</a></li>
+          <li><a href="javascript:void(0)">心悦论坛</a></li>
+          <li><a href="javascript:void(0)">帮助中心</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--特权地图展开及收回    结束-->
+  </div>
+</div>
+
+<!--导航栏开始-->
+<div class="header">
+  <div class="head-bottom w">
+    <div class="logo">
+
+        <h1><a href="javascript:void(0)">
+          <img src="img/logo.jpg" alt="">
+
+      </a>
+        </h1>
+    </div>
+    <div class="nav">
+
+      <ul>
+        <li class = "first"><a href="../主页部分/主页部分.html">首页</a></li>
+        <li class="li-game">
+          <a href="../游戏特权/游戏特权.html">游戏特权</a>
+          <div class="game">
+            <a href="javascript:void(0)">心悦手游专区</a>
+            <a href="javascript:void(0)">心悦手游专区</a>
+            <a href="javascript:void(0)">心悦手游专区</a>
+            <a href="javascript:void(0)">心悦手游专区</a>
+          </div>
+        </li>
+        <li class="service-li  bgcolor" id="li-service">
+          <a href="服务特权.html"   style="color: white">服务特权</a>
+          <div class="service">
+            <a href="javascript:void(0)">400服务专区</a>
+          </div>
+        </li>
+        <li><a href="../生活特权/生活特权.html">生活特权</a></li>
+        <li><a href="javascript:void(0)">新闻中心</a></li>
+        <li><a href="../个人中心/个人中心.html">个人中心</a></li>
+        <li><a href="javascript:void(0)">会员体系</a></li>
+        <li><a href="javascript:void(0)">G分</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--导航栏结束-->
+<!--主体的开始-->
+<div class="main w clearfix">
+  <div class="main-l">
+    <div class="main-l-t">
+      <span></span>
+    </div>
+    <button id="register">登录查看我的信息</button>
+    <p>腾讯游戏心悦俱乐部：</p>
+    <p>为你提供丰富的游戏、生活、服务等专属特权</p>
+    <div class="tl-h2"></div>
+    <div class="tr-h2"></div>
+    <div class="dl-h2"></div>
+    <div class="dr-h2"></div>
+    <div class="lt-h2"></div>
+    <div class="ld-h2"></div>
+    <div class="rt-h2"></div>
+    <div class="rd-h2"></div>
+  </div>
+  <div class="main-r">
+    <ul>
+      <li><img src="img/1.jpg" width="718" height="250"/></li>
+      <li><img src="img/2.jpg" width="718" height="250"/></li>
+      <li><img src="img/3.jpg" width="718" height="250"/></li>
+      <li><img src="img/4.jpg" width="718" height="250"/></li>
+      <li><img src="img/5.jpg" width="718" height="250"/></li>
+    </ul>
+    <ol>
+      <li class="mainCurrent"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </div>
+</div>
+<div class="content w">
+  <div class="content-left">
+    <div class="ruko">
+      <em></em>
+      <h2>快速入口</h2>
+    </div>
+    <div class="fuli" id="fuli">
+      <ul>
+        <li class="n1">
+          <a href="javascript:void(0)"></a>
+          <sapn class="io"></sapn>
+          <span class="i1"></span>
+          <span class="txt">心悦星福利</span>
+        </li>
+        <li class="n2">
+          <a href="javascript:void(0)"></a>
+          <sapn class="io"></sapn>
+          <span class="i1"></span>
+          <span class="txt">新手专区</span>
+        </li>
+        <li class="n3">
+          <a href="javascript:void(0)"></a>
+          <sapn class="io"></sapn>
+          <span class="i1"></span>
+          <span class="txt">心悦论坛</span>
+        </li>
+        <li class="n4">
+          <a href="javascript:void(0)"></a>
+          <sapn class="io"></sapn>
+          <span class="i1"></span>
+          <span class="txt">心悦推荐</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-r">
+    <div class="zxfw">
+      <em></em>
+      <span></span>
+      <h2>尊享服务</h2>
+      <ul class="clearfix">
+        <li class="zxfw-list-1"><a href="javascript:void(0)"><span>400服务专线</span></a></li>
+        <li class="zxfw-list-2"><a href="javascript:void(0)"><span>在线服务</span></a></li>
+        <li class="zxfw-list-3"><a href="javascript:void(0)"><span>限时处理</span></a></li>
+      </ul>
+    </div>
+    <div class="aqbz">
+      <em></em>
+      <h2>安全保障</h2>
+      <ul class="clearfix">
+        <li class="aqbz-list-1"><a href="javascript:void(0)"><span>被盗操作</span></a></li>
+        <li class="aqbz-list-2"><a href="javascript:void(0)"><span>误操作恢复</span></a></li>
+        <li class="aqbz-list-3"><a href="javascript:void(0)"><span>心悦安全盾</span></a></li>
+        <li class="aqbz-list-4"><a href="javascript:void(0)"><span>一站式服务</span></a></li>
+      </ul>
+    </div>
+    <div class="fwtd">
+      <em></em>
+      <h2>服务团队</h2>
+      <ul class="clearfix">
+        <li class="fwtd-list-1">
+          <img src="img/pic-fwtd1.jpg" alt="">
+          <div class="intro">                   <!--介绍-->
+            <p>客户经理</p>
+            <span class="arrow"></span>       <!--箭头-->
+          </div>
+          <div class="intro-1">                   <!--介绍-->
+            <p>“为心悦会员服务，悦人也悦己。看到玩家的问题得到解决，我感到非常开心。”
+              <span>——客户经理 婷婷</span>
+            </p>
+            <span class="arrow"></span>       <!--箭头-->
+          </div>
+          <div class="tl-h2"></div>
+          <div class="tr-h2"></div>
+          <div class="dl-h2"></div>
+          <div class="dr-h2"></div>
+          <div class="lt-h2"></div>
+          <div class="ld-h2"></div>
+          <div class="rt-h2"></div>
+          <div class="rd-h2"></div>
+        </li>
+        <li class="fwtd-list-2">
+          <img src="img/pic-fwtd2.jpg" alt="">
+          <div class="intro">                   <!--介绍-->
+            <p>大客户管家</p>
+            <span class="arrow"></span>       <!--箭头-->
+          </div>
+          <div class="intro-1">                   <!--介绍-->
+            <p>“和每一位会员成为密友是我的终极目标，有任何问题都可以联系我。等你call我~”
+              <span>——心悦管家 小七</span>
+            </p>
+            <span class="arrow"></span>       <!--箭头-->
+          </div>
+          <div class="tl-h2"></div>
+          <div class="tr-h2"></div>
+          <div class="dl-h2"></div>
+          <div class="dr-h2"></div>
+          <div class="lt-h2"></div>
+          <div class="ld-h2"></div>
+          <div class="rt-h2"></div>
+          <div class="rd-h2"></div>
+        </li>
+        <li class="fwtd-list-3">
+          <img src="img/pic-fwtd3.jpg" alt="">
+          <div class="intro">                   <!--介绍-->
+            <p>数据核查</p>
+            <span class="arrow"></span>       <!--箭头-->
+          </div>
+          <div class="intro-1">                   <!--介绍-->
+            <p>“虽然没有直接接触，但能深刻体会你此刻焦急的心情，我将以最负责的态度处理好你反馈的每一个问题。”
+              <span>——数据核查专员 益达</span>
+            </p>
+            <span class="arrow"></span>       <!--箭头-->
+          </div>
+          <div class="tl-h2"></div>
+          <div class="tr-h2"></div>
+          <div class="dl-h2"></div>
+          <div class="dr-h2"></div>
+          <div class="lt-h2"></div>
+          <div class="ld-h2"></div>
+          <div class="rt-h2"></div>
+          <div class="rd-h2"></div>
+        </li>
+        <li class="fwtd-list-4">
+          <img src="img/pic-fwtd4.jpg" alt="">
+          <div class="intro">                   <!--介绍-->
+            <p>数据修复</p>
+            <span class="arrow"></span>       <!--箭头-->
+          </div>
+          <div class="intro-1">                   <!--介绍-->
+            <p>“严谨、细心，不出丝毫差错，处理好每个问题是我的本职，我愿不辜负你的每一次等待。”
+              <span>——数据修复专员 Ling</span>
+            </p>
+            <span class="arrow"></span>       <!--箭头-->
+          </div>
+          <div class="tl-h2"></div>
+          <div class="tr-h2"></div>
+          <div class="dl-h2"></div>
+          <div class="dr-h2"></div>
+          <div class="lt-h2"></div>
+          <div class="ld-h2"></div>
+          <div class="rt-h2"></div>
+          <div class="rd-h2"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--主体的结束-->
+
+<!--右侧栏开始-->
+<div id="g_rbar">
+  <ul class="u_rbar_list">
+    <li class="rb1"><a id="returnTop">top</a></li>
+    <li class="rb4"><a target="_blank" href="javascript:void(0)">在线管家服务</a></li>
+    <li class="rb2"><a id="Dcode">二维码</a>
+      <span id="DcodeBox" style="display:none;"><img src="img/心悦app.png" width="160px" height="190px" alt="" /></span>
+    </li>
+    <li class="rb3"><a target="_blank" href="javascript:void(0)">帮助中心</a></li>
+  </ul>
+</div>
+<!--右侧栏结束-->
+
+<!--底部开始-->
+<div class="bottom" style="background-color:#eaeaea;">
+  <div class="bottomPic">
+    <img src="img/底部.png" alt="">
+  </div>
+  <div class="bottomText w">
+    <a href="javascript:void(0)">腾讯互动娱乐</a>
+    <span>|</span>
+    <a href="javascript:void(0)">服务条款</a>
+    <span>|</span>
+    <a href="javascript:void(0)">广告服务</a>
+    <span>|</span>
+    <a href="javascript:void(0)">腾讯游戏招聘</a>
+    <span>|</span>
+    <a href="javascript:void(0)">腾讯游戏客服</a>
+    <span>|</span>
+    <a href="javascript:void(0)">游戏地图</a>
+    <span>|</span>
+    <a href="javascript:void(0)">成长守护平台</a>
+    <span>|</span>
+    <a href="javascript:void(0)">商务合作</a>
+    <span>|</span>
+    <a href="javascript:void(0)">网站导航</a>
+    <br>
+    <p>COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+    <a href="javascript:void(0)">腾讯公司 版权所有</a>
+  </div>
+</div>
+<!--底部结束-->
+</body>
+
+</html>

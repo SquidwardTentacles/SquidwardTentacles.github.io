@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="mian.css">
+    <script src="jqurey/jquery-1.12.4.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+
+<!--QQ-login是大盒子-->
+<div id="QQ-login" >
+    <ul id="login-box1">
+        <li id="qq-denglu" ><p>QQ登录</p></li>
+        <li id="wx-denglu"><p>微信登录</p></li>
+        <li id="gaunbi">×</li>
+    </ul>
+    <div id="login-box2">
+        <div id="login-box3">
+            <img src="images/qq-icon.png" alt="">
+            <p>QQ、微信将互为独立的体系帐号<br>
+                分别独立获得成长值、体系资格、等级权益。</p>
+        </div>
+        <!--右边二维码-->
+        <div id="QQ-ewm">
+            <p class="aq-login">快速安全登录</p>
+            <p class="qq-sj">请使用<a href="javascript:void(0);">QQ手机版</a>扫描二维码，<br>
+                安全登录，防止盗号。 </p>
+            <!--<img id="login-ewm" src="二维码.png" alt="">-->
+            <div id="login-box4">
+                <span id="login-ewm" ></span>
+                <img id="login-JLT" src="images/登陆精灵图.png" alt="">
+            </div>
+            <ul id="zhuCe" >
+                <li><a href="javascript:void(0);">帐号密码登录  |</a></li>
+                <li><a href="javascript:void(0);">注册新帐号  |</a></li>
+                <li> <a href="javascript:void(0);">意见反馈</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <!--QQ登陆页面的结束-->
+    <!--微信登陆页面的开始-->
+
+    <div id="wx-BigBox">
+        <div id="wx-box1">
+            <img src="images/wx-icon.png" alt="">
+            <p>QQ、微信将互为独立的体系帐号<br>
+                分别独立获得成长值、体系资格、等级权益。</p>
+        </div>
+        <!--右边二维码-->
+        <div id="wx-ewm">
+            <p class="wx-login">安全登录,防止被盗</p>
+            <span id="wxEwm"></span>
+        </div>
+        <div id="tuoYuan">
+            请使用微信扫描二维码登录    <br>
+            “心悦俱乐部”
+        </div>
+
+    </div>
+
+</div>
+<!--微信登陆页面的开始-->
+<!--遮罩层-->
+<div class="mask"></div>
+
+
+
+
+<!--头部开始-->
+<div class="top" id="top">
+    <!--头部版心-->
+    <div class="w">
+        <!--点击出现登陆窗-->
+        <span id="login">您好,请登陆</span>
+        <!--特权地图展开及收回    开始-->
+        <div id="map">
+                    <span>
+                        <a href="javascript:void(0);">特权地图</a>
+                    </span>
+            <div id="jianxi"></div>
+            <div class="hide" id="tequanditu" >
+                <ul>
+                    <li>生活特权</li>
+                    <li>
+                        <a href="javascript:void(0);">京东购物优惠福</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">深航专享福利</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">悦享绿钻</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">心悦观影特权</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>游戏特权</li>
+                    <li>
+                        <a href="javascript:void(0);">心悦精品推荐</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">心悦手游专区</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">心悦新游专区</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">心悦页游专区</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">游戏礼包</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>服务特权</li>
+                    <li>
+                        <a href="javascript:void(0);">会员专线</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">心悦限时处理</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">被盗找回</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">误操作回复</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">点亮尊贵图标</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>其他</li>
+                    <li><a href="javascript:void(0);">个人中心</a></li>
+                    <li><a href="javascript:void(0);">心悦任务</a></li>
+                    <li><a href="javascript:void(0);">心悦体系</a></li>
+                    <li><a href="javascript:void(0);">召唤心悦</a></li>
+                    <li><a href="javascript:void(0);">心悦论坛</a></li>
+                    <li><a href="javascript:void(0);">帮助中心</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--特权地图展开及收回    结束-->
+    </div>
+</div>
+<!--头部结束-->
+
+<!--导航栏开始-->
+<div class="header">
+    <div class="head-bottom w">
+        <div class="logo">
+                <h1>
+                    <a href="../主页部分/主页部分.html">
+                        <img src="images/logo.jpg" alt="心悦俱乐部">
+                    </a>
+                </h1>
+
+        </div>
+        <div class="nav">
+            <ul>
+                <li >
+                    <a href="../主页部分/主页部分.html" >首页</a></li>
+                <li class="li-game">
+                    <a href="../游戏特权/游戏特权.html">游戏特权</a>
+                    <div class="game">
+                        <a href="javascript:void(0);">心悦手游专区</a>
+                        <a href="javascript:void(0);">新游戏体验专区</a>
+                        <a href="javascript:void(0);">精品游戏推荐</a>
+                        <a href="javascript:void(0);">传奇悦享会</a>
+                    </div>
+                </li>
+                <li class="service-li" id="li-service">
+                    <a href="../服务特权/服务特权.html">服务特权</a>
+                    <div class="service">
+                        <a href="javascript:void(0);">400服务专区</a>
+                    </div>
+                </li>
+                <li class = "first bgcolor">
+                    <a href="生活特权.html" style="color: white">生活特权</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">新闻中心</a>
+                </li>
+                <li>
+                    <a href="../个人中心/个人中心.html">个人中心</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">会员体系</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">G分</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--导航栏结束-->
+
+<!--导航栏结束-->
+<!--主轮播图B-->
+<div id="g_movepic">
+    <!--  广告轮播 -->
+    <div class="m_adshow">
+        <ul class="u_adshow_img">
+              <li>
+                    <a href="javascript:void(0);">
+                        <img src="images/轮播图1.jpg" width="100%" height="380px" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="images/轮播图2.jpg" width="100%" height="380px" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="images/轮播图3.jpg" width="100%" height="380px" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="images/轮播图4.jpg" width="100%" height="380px" alt="">
+                    </a>
+                </li>
+        </ul>
+    </div>
+    <div class="circles" id="circles">
+        <ol>
+            <li class="cur"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+        <div class="u_adshow_btn">
+            <a href="javascript:void(0);" class="leftBtn" id="leftBtn"></a>
+            <a href="javascript:void(0);" class="rightBtn" id="rightBtn"></a>
+        </div>
+
+</div>
+    <!--主轮播图E-->
+
+
+<!--右侧栏开始-->
+<div id="g_rbar">
+    <ul class="u_rbar_list">
+        <li class="rb1"><a id="returnTop">top</a></li>
+        <li class="rb4"><a target="_blank" href="javascript:void(0)">在线管家服务</a></li>
+        <li class="rb2"><a id="Dcode">二维码</a>
+            <span id="DcodeBox" style="display:none;"><img src="images/心悦app.png" width="160px" height="190px" alt="" /></span>
+        </li>
+        <li class="rb3"><a target="_blank" href="javascript:void(0)">帮助中心</a></li>
+    </ul>
+</div>
+<!--右侧栏结束-->
+<!--生活特权大盒子-->
+<div id="tequan-Box" class="clearfix">
+    <!--里面的大盒子-->
+    <div class="tequan-Box1 clearfix ">
+
+        <!--顶部的盒子-->
+        <div class="tequan-top">
+            <!--左边的文本-->
+            <span class="zhuzi"></span>
+            <span class="tequan-text">生活特权推荐</span>
+            <div class="right-login" >
+                登录查看我的信息
+            </div>
+
+        </div>
+        <!--活动的标题开始-->
+        <div class="life-bar  clearfix" id="JactiveList">
+            <span class=" ClickSJ item-bar" rel="_index"  >全部</span>
+            <span class="split"></span>
+            <span class="item-bar cli  clearfix" rel="_start" >正在进行</span>
+            <span class="split"></span>
+            <span class="item-bar cli" rel="_nostart">即将开始</span>
+            <span class="split"></span>
+            <span class="item-bar cli " rel="_forever" >长期</span>
+            <span class="split"></span>
+            <span class="item-bar yijieshu" rel="_end">已结束</span>
+        </div>
+        <p class="aiyo">矮油，暂无相关活动哦!</p>
+        <!--下面图片的开始-->
+        <div class="HD-moban">
+            <ul>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/1.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">6631</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">迅游加速器限时免费</p>
+                        <p class="text-date">活动时间：2018-01-11~2018-03-11</p>
+                        <p class="text-foot">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/2.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5985</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">双旦红包,开幸福好礼</p>
+                        <p class="text-date">活动时间：2017-12-25~2018-03-23</p>
+                        <p class="text-foot">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/3.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5546</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">腾爱糖大夫心悦专场</p>
+                        <p class="text-date">活动时间：2018-02-11~2018-04-02</p>
+                        <p class="text-foot">半年试纸免费测，好礼天天抽！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">半年试纸免费测，好礼天天抽！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/4.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">6631</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">迅游加速器限时免费</p>
+                        <p class="text-date">活动时间：2018-01-11~2018-03-11</p>
+                        <p class="text-foot">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/5.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5985</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">双旦红包,开幸福好礼</p>
+                        <p class="text-date">活动时间：2017-12-25~2018-03-23</p>
+                        <p class="text-foot">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/6.png" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5546</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">腾爱糖大夫心悦专场</p>
+                        <p class="text-date">活动时间：2018-02-11~2018-04-02</p>
+                        <p class="text-foot">半年试纸免费测，好礼天天抽！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">半年试纸免费测，好礼天天抽！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/7.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">6631</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">迅游加速器限时免费</p>
+                        <p class="text-date">活动时间：2018-01-11~2018-03-11</p>
+                        <p class="text-foot">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/8.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5985</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">双旦红包,开幸福好礼</p>
+                        <p class="text-date">活动时间：2017-12-25~2018-03-23</p>
+                        <p class="text-foot">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/9.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5546</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">腾爱糖大夫心悦专场</p>
+                        <p class="text-date">活动时间：2018-02-11~2018-04-02</p>
+                        <p class="text-foot">半年试纸免费测，好礼天天抽！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">半年试纸免费测，好礼天天抽！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/10.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">6631</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">迅游加速器限时免费</p>
+                        <p class="text-date">活动时间：2018-01-11~2018-03-11</p>
+                        <p class="text-foot">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/11.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5985</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">双旦红包,开幸福好礼</p>
+                        <p class="text-date">活动时间：2017-12-25~2018-03-23</p>
+                        <p class="text-foot">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/12.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5546</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">腾爱糖大夫心悦专场</p>
+                        <p class="text-date">活动时间：2018-02-11~2018-04-02</p>
+                        <p class="text-foot">半年试纸免费测，好礼天天抽！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">半年试纸免费测，好礼天天抽！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/13.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">6631</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">迅游加速器限时免费</p>
+                        <p class="text-date">活动时间：2018-01-11~2018-03-11</p>
+                        <p class="text-foot">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/14.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5985</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">双旦红包,开幸福好礼</p>
+                        <p class="text-date">活动时间：2017-12-25~2018-03-23</p>
+                        <p class="text-foot">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/15.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5546</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">腾爱糖大夫心悦专场</p>
+                        <p class="text-date">活动时间：2018-02-11~2018-04-02</p>
+                        <p class="text-foot">半年试纸免费测，好礼天天抽！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">半年试纸免费测，好礼天天抽！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/16.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">6631</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">迅游加速器限时免费</p>
+                        <p class="text-date">活动时间：2018-01-11~2018-03-11</p>
+                        <p class="text-foot">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">1月18日前任意游戏免费加速，会员卡、国际会员卡任性兑！！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/17.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5985</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">双旦红包,开幸福好礼</p>
+                        <p class="text-date">活动时间：2017-12-25~2018-03-23</p>
+                        <p class="text-foot">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">有机会赢十二种实物周边！500元携程红包免费领！1元开通超级会员任你享！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+                <li class="game-li">
+                    <div class="li-img">
+                        <img src="images/3.jpg" alt="">
+                        <span class="over">已结束</span>
+                        <!--关注人数-->
+                        <span class="li-cbg"></span>
+                        <p class="li-num">
+                            已有
+                            <span class="renshu">5546</span>
+                            人关注
+                        </p>
+                    </div>
+
+                    <div class="li-text">
+                        <p class="text-tit">腾爱糖大夫心悦专场</p>
+                        <p class="text-date">活动时间：2018-02-11~2018-04-02</p>
+                        <p class="text-foot">半年试纸免费测，好礼天天抽！</p>
+                    </div>
+                    <div class="HD-jianjie">
+                        <p class="HD-tit">
+                            活动简介
+                        </p>
+                        <p class="HD-tex">半年试纸免费测，好礼天天抽！</p>
+                        <span class="HD-xiangqing">
+                                <i></i>
+                                查看活动详情
+                            </span>
+
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--底部开始-->
+<div class="bottom" style="background-color:#eaeaea;">
+    <div class="bottomPic">
+        <img src="images/底部.png" alt="">
+    </div>
+    <div class="bottomText w">
+        <a href="javascript:void(0);">腾讯互动娱乐</a>
+        <span>|</span>
+        <a href="javascript:void(0);">服务条款</a>
+        <span>|</span>
+        <a href="javascript:void(0);">广告服务</a>
+        <span>|</span>
+        <a href="javascript:void(0);">腾讯游戏招聘</a>
+        <span>|</span>
+        <a href="javascript:void(0);">腾讯游戏客服</a>
+        <span>|</span>
+        <a href="javascript:void(0);">游戏地图</a>
+        <span>|</span>
+        <a href="javascript:void(0);">成长守护平台</a>
+        <span>|</span>
+        <a href="javascript:void(0);">商务合作</a>
+        <span>|</span>
+        <a href="javascript:void(0);">网站导航</a>
+        <br>
+        <p>COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+        <a href="javascript:void(0);">腾讯公司 版权所有</a>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+<!--底部结束-->
+
+
+
+
+
+
+
+</body>
+</html>

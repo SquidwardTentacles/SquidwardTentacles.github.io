@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/心悦.css">
+  <link rel="stylesheet" href="css/外联样式.css">
+  <link rel="stylesheet" href="css/心悦-2.css">
+  <script src="jquery-1.12.4.js"></script>
+  <script src="js/心悦.js"></script>
+  <script src="js/调用JQ.js"></script>
+  <script src="js/心悦-2.js"></script>
+  <title>Title</title>
+</head>
+<body>
+
+<!--头部开始-->
+<div class="top" id="top">
+  <!--头部版心-->
+  <div class="w">
+    <!--点击出现登陆窗-->
+    <span id="login">您好,请登陆</span>
+    <!--特权地图展开及收回    开始-->
+    <div id="map">
+                    <span>
+                        <a href="javascript:void(0)">特权地图</a>
+                    </span>
+      <div id="jianxi"></div>
+      <div class="hide" id="tequanditu" >
+        <ul>
+          <li>生活特权</li>
+          <li>
+            <a href="javascript:void(0)">京东购物优惠福</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">深航专享福利</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">悦享绿钻</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">心悦观影特权</a>
+          </li>
+        </ul>
+        <ul>
+          <li>游戏特权</li>
+          <li>
+            <a href="javascript:void(0)">心悦精品推荐</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">心悦手游专区</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">心悦新游专区</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">心悦页游专区</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">游戏礼包</a>
+          </li>
+        </ul>
+        <ul>
+          <li>服务特权</li>
+          <li>
+            <a href="javascript:void(0)">会员专线</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">心悦限时处理</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">被盗找回</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">误操作回复</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">点亮尊贵图标</a>
+          </li>
+        </ul>
+        <ul>
+          <li>其他</li>
+          <li><a href="javascript:void(0)">个人中心</a></li>
+          <li><a href="javascript:void(0)">心悦任务</a></li>
+          <li><a href="javascript:void(0)">心悦体系</a></li>
+          <li><a href="javascript:void(0)">召唤心悦</a></li>
+          <li><a href="javascript:void(0)">心悦论坛</a></li>
+          <li><a href="javascript:void(0)">帮助中心</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--特权地图展开及收回    结束-->
+  </div>
+</div>
+<!--头部结束-->
+
+
+<div class="header">
+  <div class="head-bottom w">
+    <div class="logo">
+
+        <h1>
+          <a href="../主页部分/主页部分.html">
+              <img src="心悦-img/logo.jpg" alt="">
+          </a>
+        </h1>
+
+    </div>
+    <div class="nav" >
+      <ul>
+        <li><a href="../主页部分/主页部分.html">首页</a></li>
+        <li class="li-game ">
+          <a href="游戏特权.html" class="bgcolor">游戏特权</a>
+          <div class="game">
+            <a href="javascript:void(0)">心悦手游专区</a>
+            <a href="javascript:void(0)">新游体验专区</a>
+            <a href="javascript:void(0)">精品游戏推荐</a>
+            <a href="javascript:void(0)">传奇悦享会</a>
+          </div>
+        </li>
+        <li class="service-li" id="li-service">
+          <a href="../服务特权/服务特权.html">服务特权</a>
+          <div class="service">
+            <a href="javascript:void(0)">400服务专区</a>
+          </div>
+        </li>
+        <li><a href="../生活特权/生活特权.html">生活特权</a></li>
+        <li><a href="javascript:void(0)">新闻中心</a></li>
+        <li><a href="../个人中心/个人中心.html">个人中心</a></li>
+        <li><a href="javascript:void(0)">会员体系</a></li>
+        <li><a href="javascript:void(0)">G分</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <!-- 轮播图tab栏开始 -->
+<div class="w " style = "height:1610px" id="main">
+    <div class="left-t">
+      <div class="moveIn">
+          <div id="btnBlue">
+                  <img src="img/登陆-蓝.png" alt="" style="width: 195px;height: 40px;">
+              </div>
+              <div id="btnOrange" class="hide">
+                  <img src="img/登陆-橙.png" alt="" style="width: 195px;height: 40px;">
+              </div>
+      </div>
+    </div>
+    <!-- 轮播图开始 -->
+    <div class="right-t">
+      <div id="lbt">
+        <ul class="img">
+          <li><a href="javascript:void(0)"><img src="img/1525805960518887441.jpg" height="250" width="939" alt=""></a></li>
+          <li><a href="javascript:void(0)"><img src="img/1525395120255961400.jpg" height="250" width="939" alt=""></a></li>
+          <li><a href="javascript:void(0)"><img src="img/1525893096748866699.jpg" height="250" width="939" alt=""></a></li>
+          <li><a href="javascript:void(0)"><img src="img/1525648410926617673new.jpg" height="250" width="939" alt=""></a></li>
+        </ul>
+        <!-- 轮播图下面小点 -->
+        <ul class="pointer">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul> 
+      </div>  
+    </div>
+    <!-- 轮播图结束 -->
+    <div class="left-b">
+      <div class="left-top">
+        <a href="javascript:void(0)">
+          <img src="img/bg-o.png" alt="">
+        </a>
+      </div>
+      <div class="left-bottom">
+        <a href="javascript:void(0)">
+          <img src="img/bg-t.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- tab栏开始 -->
+    <div class="right-b">
+      <div class="border-right">
+      <div class="nav-game">
+        <ul>
+          <li class="one style"><a href="javascript:void(0)">热门游戏</a></li>
+          <li class="one"><a href="javascript:void(0)">ABCD</a></li>
+          <li class="one"><a href="javascript:void(0)">EFGH</a></li>
+          <li class="one"><a href="javascript:void(0)">IJKL</a></li>
+          <li class="one"><a href="javascript:void(0)">MNOP</a></li>
+          <li class="one"><a href="javascript:void(0)">QRST</a></li>
+          <li class="one"><a href="javascript:void(0)">UVW</a></li>
+          <li class="one"><a href="javascript:void(0)">XYZ</a></li>
+        </ul>
+      </div>
+        <div class="nav-menu clearfix">
+          <div class=" two selected">
+            <ul>
+              <li><a href="javascript:void(0)">穿越火线</a></li>
+              <li><a href="javascript:void(0)">地下城与勇士</a></li>
+              <li><a href="javascript:void(0)">逆战</a></li>
+              <li><a href="javascript:void(0)">QQ飞车</a></li>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">使命召唤</a></li>
+              <li><a href="javascript:void(0)">火影忍者</a></li>
+              <li><a href="javascript:void(0)">OL植物大战僵尸</a></li>
+              <li><a href="javascript:void(0)">OL暴风王座</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">使命召唤</a></li>
+              <li><a href="javascript:void(0)">火影忍者</a></li>
+              <li><a href="javascript:void(0)">OL植物大战僵尸</a></li>
+              <li><a href="javascript:void(0)">OL暴风王座</a></li>
+            </ul>
+          </div>
+          <div class="two">
+            <ul>
+              <li><a href="javascript:void(0)">穿越火线</a></li>
+              <li><a href="javascript:void(0)">地下城与勇士</a></li>
+              <li><a href="javascript:void(0)">逆战</a></li>
+              <li><a href="javascript:void(0)">QQ飞车</a></li>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">使命召唤</a></li>
+              <li><a href="javascript:void(0)">OL植物大战僵尸</a></li>
+              <li><a href="javascript:void(0)">OL暴风王座</a></li>
+            </ul>
+          </div>
+          <div class="two">
+            <ul>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+            </ul>
+          </div>
+          <div class="two">
+            <ul>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+            </ul>
+          </div>
+          <div class="two">
+            <ul>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+            </ul>
+          </div>
+          <div class="two">
+            <ul>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+            </ul>
+          </div>
+          <div class="two">
+            <ul>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+            </ul>
+          </div>
+          <div class="two">
+            <ul>
+              <li><a href="javascript:void(0)">QQ炫舞</a></li>
+              <li><a href="javascript:void(0)">天涯明月刀</a></li>
+              <li><a href="javascript:void(0)">剑灵</a></li>
+              <li><a href="javascript:void(0)">御龙在天</a></li>
+              <li><a href="javascript:void(0)">怪物猎人</a></li>
+              <li><a href="javascript:void(0)">FIFA</a></li>
+              <li><a href="javascript:void(0)">轩辕传奇</a></li>
+            </ul>
+          </div>
+        </div>
+    <!-- tab栏结束 -->
+
+<!-- 轮播图tab栏结束 -->
+      </div>
+<div class="game-big w">
+<div class="all ">
+
+
+  <!--右部模块开始-->
+	
+  <div class="game-right">
+    <!--游戏导航开始-->
+    <div class="game-nav bor">
+      <ul>
+        <li><a href="javascript:void(0)">全部</a></li>
+        <li><a href="javascript:void(0)">抢先体验</a></li>
+        <li><a href="javascript:void(0)">热门手游</a></li>
+        <li><a href="javascript:void(0)">专属端游</a></li>
+        <li><a href="javascript:void(0)">专享页游</a></li>
+      </ul>
+    </div>
+    <!--游戏导航结束-->
+
+    <!--活动模块开始-->
+
+    <div class="hd clearfix">
+      <ul>
+        <li>
+          <div>
+            <span>HOT</span>
+            <div class="hot-img">
+              <img src="心悦-img/hot.jpg" alt="">
+            </div>
+            <div class="hot-right">
+              <a href="javascript:void(0)">《消除者联盟》心悦特别献礼</a>
+              <a href="javascript:void(0)">正在进行</a>
+              <p>活动期限:2018-05-11 - 2018-06-11</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span>HOT</span>
+            <div class="hot-img">
+              <img src="心悦-img/hot-t.jpg" alt="">
+            </div>
+            <div class="hot-right">
+              <a href="javascript:void(0)">《FIFA足球世界》预约C罗赠礼,Q币.世界杯门票等你赢!</a>
+              <a href="javascript:void(0)">正在进行</a>
+              <p>活动期限:2018-05-11 - 2018-06-11</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span>HOT</span>
+            <div class="hot-img">
+              <img src="心悦-img/hot-th.jpg" alt="">
+            </div>
+            <div class="hot-right">
+              <a href="javascript:void(0)">《天涯明月刀》全新版本好礼送不停</a>
+              <a href="javascript:void(0)">正在进行</a>
+              <p>活动期限:2018-05-09 - 2018-06-09</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span>HOT</span>
+            <div class="hot-img">
+              <img src="心悦-img/hot-f.jpg" alt="">
+            </div>
+            <div class="hot-right">
+              <a href="javascript:void(0)">《罗博造造》限号不删档,大战一触即发!</a>
+              <a href="javascript:void(0)">正在进行</a>
+              <p>活动期限:2018-05-09 - 2018-08-31</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+    <!--活动模块结束-->
+
+    <!--下一页按钮开始-->
+    <div class="next">
+      <a href="javascript:void(0)">下一页</a>
+    </div>
+    <!--下一页按钮结束-->
+  </div>
+  <!--右部模块结束-->
+</div>
+</div>
+    </div>
+</div>
+<div class="clear"></div>
+<!--底部开始-->
+<div class="bottom" style="background-color:#eaeaea;">
+  <div class="bottomPic">
+    <img src="img/底部.png" alt="">
+  </div>
+  <div class="bottomText w">
+    <a href="javascript:void(0)">腾讯互动娱乐</a>
+    <span>|</span>
+    <a href="javascript:void(0)">服务条款</a>
+    <span>|</span>
+    <a href="javascript:void(0)">广告服务</a>
+    <span>|</span>
+    <a href="javascript:void(0)">腾讯游戏招聘</a>
+    <span>|</span>
+    <a href="javascript:void(0)">腾讯游戏客服</a>
+    <span>|</span>
+    <a href="javascript:void(0)">游戏地图</a>
+    <span>|</span>
+    <a href="javascript:void(0)">成长守护平台</a>
+    <span>|</span>
+    <a href="javascript:void(0)">商务合作</a>
+    <span>|</span>
+    <a href="javascript:void(0)">网站导航</a>
+    <br>
+    <p>COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+    <a href="javascript:void(0)">腾讯公司 版权所有</a>
+
+
+
+
+
+
+
+  </div>
+</div>
+<!--底部结束-->
+
+<!--QQ-login是大盒子-->
+<div id="QQ-login" class="hide">
+  <ul id="login-box1">
+    <li id="qq-denglu" ><p>QQ登录</p></li>
+    <li id="wx-denglu"><p>微信登录</p></li>
+    <li id="gaunbi">×</li>
+  </ul>
+  <div id="login-box2">
+    <div id="login-box3">
+      <img src="img/qq-icon.png" alt="">
+      <p>QQ、微信将互为独立的体系帐号<br>
+        分别独立获得成长值、体系资格、等级权益。</p>
+    </div>
+    <!--右边二维码-->
+    <div id="QQ-ewm">
+      <p class="aq-login">快速安全登录</p>
+      <p class="qq-sj">请使用<a href="javascript:void(0)">QQ手机版</a>扫描二维码，<br>
+        安全登录，防止盗号。 </p>
+      <!--<img id="login-ewm" src="二维码.png" alt="">-->
+      <div id="login-box4">
+        <span id="login-ewm" ></span>
+        <img id="login-JLT" src="img/登陆精灵图.png" alt="">
+      </div>
+      <ul id="zhuCe" >
+        <li><a href="javascript:void(0)">帐号密码登录  |</a></li>
+        <li><a href="javascript:void(0)">注册新帐号  |</a></li>
+        <li> <a href="javascript:void(0)">意见反馈</a></li>
+      </ul>
+
+
+    </div>
+  </div>
+
+  <!--QQ登陆页面的结束-->
+  <!--微信登陆页面的开始-->
+
+  <div id="wx-BigBox">
+    <div id="wx-box1">
+      <img src="img/wx-icon.png" alt="">
+      <p>QQ、微信将互为独立的体系帐号<br>
+        分别独立获得成长值、体系资格、等级权益。</p>
+    </div>
+    <!--右边二维码-->
+    <div id="wx-ewm">
+      <p class="wx-login">安全登录,防止被盗</p>
+      <span id="wxEwm"></span>
+    </div>
+    <div id="tuoYuan">
+      请使用微信扫描二维码登录    <br>
+      “心悦俱乐部”
+    </div>
+
+  </div>
+
+</div>
+<!--微信登陆页面的开始-->
+<!--遮罩层-->
+<div class="mask hide"></div>
+<!--右侧栏开始-->
+<div id="g_rbar">
+  <ul class="u_rbar_list">
+    <li class="rb1"><a id="returnTop">top</a></li>
+    <li class="rb4"><a target="_blank" href="javascript:void(0)">在线管家服务</a></li>
+    <li class="rb2"><a id="Dcode">二维码</a>
+      <span id="DcodeBox" style="display:none;"><img src="../生活特权/images/心悦app.png" width="160px" height="190px" alt="" /></span>
+    </li>
+    <li class="rb3"><a target="_blank" href="javascript:void(0)">帮助中心</a></li>
+  </ul>
+</div>
+<!--右侧栏结束-->
+
+</body>
+<script>
+    $(function () {
+
+        $(".moveIn").mouseenter(function(){
+            $(this).find("div").eq(1).show()
+        })
+        $(".moveIn").mouseleave(function(){
+            $(this).find("div").eq(1).hide()
+        })
+        $("#login,#btnOrange").click(function () {
+            $("#QQ-login").show();
+            $("#mask").show();
+        })
+        //qq登录鼠标点击事件
+        $('#qq-denglu').click(function () {
+            $('#wx-BigBox').hide();
+            $('#login-box2').show();
+            $('#qq-denglu').css({
+                'border-top':'3px solid #468dff ',
+                'border-bottom':'1px solid white '
+
+
+            });
+            $('#wx-denglu').css({
+                'border-top':'3px solid white ',
+                'border-bottom':'1px solid #468dff '
+
+
+            });
+            $('#login-box1').css({
+                'border-bottom':'1px solid #468dff '
+            })
+
+
+        });
+        //右边点击关闭事件
+        $('#gaunbi').mouseenter(function () {
+            $(this).css({
+                'cursor':'pointer'
+            })
+            $('#gaunbi').click(function () {
+                $('.mask').hide();
+                $('#QQ-login').hide()
+
+            })
+        });
+
+
+
+        //微信登录移入事件
+        $('#wx-denglu').mouseenter(function () {
+            $(this).css({
+                'cursor':'pointer'
+            })
+        });
+        //qq登录移入事件
+        $('#qq-denglu').mouseenter(function () {
+            $(this).css({
+                'cursor':'pointer'
+            })
+        })
+        $('#wx-denglu').click(function () {
+            $('#wx-BigBox').show();
+            $('#login-box2').hide();
+
+
+
+            $('#wx-denglu').css({
+                'border-top':'3px solid #13d210 ',
+                'border-bottom':'1px solid white '
+            });
+            $('#qq-denglu').css({
+                'border-top':'3px solid white ',
+                'border-bottom':'1px solid #13d210 '
+            })
+            $('#login-box1').css({
+                'border-bottom':'1px solid #13d210 '
+            })
+
+        });
+        $('#login-box4').mouseenter(function () {
+            $('#login-ewm').stop().animate({
+                left:40
+            })
+            $('#login-JLT').stop().show(500);
+
+
+        })
+        $('#login-box4').mouseleave(function () {
+            $('#login-ewm').stop().animate({
+                left:115
+            })
+            $('#login-JLT').stop() .hide(300);
+        })
+    })
+</script>
+</html>

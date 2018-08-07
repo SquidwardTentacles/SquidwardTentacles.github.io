@@ -62,9 +62,11 @@ p {
 }
 
 .tm-site-header {
-    margin: 10px;
     text-align: right;
     width: 100%;
+}
+.tm-site-header h1{
+    text-align: center
 }
 
 .tm-nav ul {
@@ -356,3 +358,14 @@ p:last-child { margin-bottom: 0; }
     .fa-3x { font-size: 2.2em; }
 }
 
+#tm-wrap #product-id #home-link .tm-nav-link a{
+    font-size: 18px;
+    color:#fff;
+}
+#tm-wrap #product-id #home-link .tm-nav-link p.product-text{
+    font-size: 8px;
+    color:#f0f0f0;
+}
+#tm-wrap #product-id{
+    display: flex
+}

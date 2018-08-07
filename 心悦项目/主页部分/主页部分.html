@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/外联样式.css">
+    <script src="jQuery/jquery-1.12.4.js"></script>
+    <script src="js/调用JQ.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div class="top" id="top">
+    <!--头部版心-->
+    <div class="w">
+        <!--点击出现登陆窗-->
+        <span id="login">您好,请登陆</span>
+        <!--特权地图展开及收回    开始-->
+        <div id="map">
+                    <span>
+                        <a href="javascript:void(0)">特权地图</a>
+                    </span>
+            <div id="jianxi"></div>
+            <div class="hide" id="tequanditu" >
+                <ul>
+                    <li>生活特权</li>
+                    <li>
+                        <a href="javascript:void(0)">京东购物优惠福</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">深航专享福利</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">悦享绿钻</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">心悦观影特权</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>游戏特权</li>
+                    <li>
+                        <a href="javascript:void(0)">心悦精品推荐</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">心悦手游专区</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">心悦新游专区</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">心悦页游专区</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">游戏礼包</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>服务特权</li>
+                    <li>
+                        <a href="javascript:void(0)">会员专线</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">心悦限时处理</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">被盗找回</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">误操作回复</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">点亮尊贵图标</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>其他</li>
+                    <li><a href="../个人中心/个人中心.html">个人中心</a></li>
+                    <li><a href="javascript:void(0)">心悦任务</a></li>
+                    <li><a href="javascript:void(0)">心悦体系</a></li>
+                    <li><a href="javascript:void(0)">召唤心悦</a></li>
+                    <li><a href="javascript:void(0)">心悦论坛</a></li>
+                    <li><a href="javascript:void(0)">帮助中心</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--特权地图展开及收回    结束-->
+    </div>
+</div>
+<!--头部结束-->
+
+<!--导航栏开始-->
+<div class="header">
+    <div class="head-bottom w">
+        <div class="logo">
+                <h1>
+                    <a href="主页部分.html">
+                        <img src="img/logo.jpg" alt="">
+                    </a>
+                </h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class = "first bgcolor">
+                    <a href="主页部分.html" style="color: white">首页</a></li>
+                <li class="li-game">
+                    <a href="../游戏特权/游戏特权.html">游戏特权</a>
+                    <div class="game">
+                        <a href="javascript:void(0)">心悦手游专区</a>
+                        <a href="javascript:void(0)">新游体验专区</a>
+                        <a href="javascript:void(0)">精品游戏推荐</a>
+                        <a href="javascript:void(0)">传奇悦享会</a>
+                    </div>
+                </li>
+                <li class="service-li" id="li-service">
+                    <a href="../服务特权/服务特权.html">服务特权</a>
+                    <div class="service">
+                        <a href="javascript:void(0)">400服务专区</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">生活特权</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">新闻中心</a>
+                </li>
+                <li>
+                    <a href="../个人中心/个人中心.html">个人中心</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">会员体系</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">G分</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--导航栏结束-->
+
+<!--登陆窗-开始->
+<!--QQ-login是大盒子-->
+<div id="QQ-login" class="hide" >
+    <ul id="login-box1">
+        <li id="qq-denglu" ><p>QQ登录</p></li>
+        <li id="wx-denglu"><p>微信登录</p></li>
+        <li id="gaunbi">×</li>
+    </ul>
+    <div id="login-box2">
+        <div id="login-box3">
+            <img src="img/qq-icon.png" alt="">
+            <p>QQ、微信将互为独立的体系帐号<br>
+                分别独立获得成长值、体系资格、等级权益。</p>
+        </div>
+        <!--右边二维码-->
+        <div id="QQ-ewm">
+            <p class="aq-login">快速安全登录</p>
+            <p class="qq-sj">请使用<a href="javascript:void(0)">QQ手机版</a>扫描二维码，<br>
+                安全登录，防止盗号。 </p>
+            <!--<img id="login-ewm" src="二维码.png" alt="">-->
+            <div id="login-box4">
+                <span id="login-ewm" ></span>
+                <img id="login-JLT" src="img/登陆精灵图.png" alt="">
+            </div>
+            <ul id="zhuCe" >
+                <li><a href="javascript:void(0)">帐号密码登录  |</a></li>
+                <li><a href="javascript:void(0)">注册新帐号  |</a></li>
+                <li> <a href="javascript:void(0)">意见反馈</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--QQ登陆页面的结束-->
+    <!--微信登陆页面的开始-->
+    <div id="wx-BigBox">
+        <div id="wx-box1">
+            <img src="img/wx-icon.png" alt="">
+            <p>QQ、微信将互为独立的体系帐号<br>
+                分别独立获得成长值、体系资格、等级权益。</p>
+        </div>
+        <!--右边二维码-->
+        <div id="wx-ewm">
+            <p class="wx-login">安全登录,防止被盗</p>
+            <span id="wxEwm"></span>
+        </div>
+        <div id="tuoYuan">
+            请使用微信扫描二维码登录    <br>
+            “心悦俱乐部”
+        </div>
+    </div>
+</div>
+<!--微信登陆页面的开始-->
+
+<!--遮罩层开始-->
+<div class="mask hide" id="mask"></div>
+<!--遮罩层结束-->
+<!--登陆窗结束-->
+
+<!--满屏轮播图开始-->
+<div class="lunbotu">
+    <!--图片开始-->
+    <ul class="pic1">
+        <li><a href="javascript:void(0)"><img src="img/轮播图01.jpg" alt="" style="width: 100%; height:450px"></a></li>
+        <li class="hide"><a href="javascript:void(0)"><img src="img/轮播图02.jpg" alt="" style="width: 100%; height:450px"></a></li>
+        <li class="hide"><a href="javascript:void(0)"><img src="img/轮播图03.jpg" alt="" style="width: 100%; height:450px"></a></li>
+    </ul>
+    <!--图片结束-->
+
+    <!--小按钮开始-->
+    <ul class="chooseBtn">
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+    <!--小按钮结束-->
+
+    <!--版心及登陆开始-->
+    <div class="w">
+        <div class="denglu">
+            <div>
+                <img src="img/登陆图片.png" alt="">
+            </div>
+            <div class="loginBar" id="loginBar">
+                <a href="javascript:void(0)" id="blue">登录查看我的信息</a>
+                <a href="javascript:void(0)" id="orange" style="display: none">登录查看我的信息</a>
+            </div>
+
+        </div>
+    </div>
+    <!--版心及登陆结束-->
+</div>
+<!--轮播图结束-->
+
+<!--主题内容部分开始-->
+<div class="mainBox">
+    <div class="w">
+        <img src="img/mainBox.png" style="width: 100%">
+    </div>
+    <div class="main w">
+<!--轮播图开始-->
+        <div class="picLong" id="lunbotu">
+                <ul class="pictures">
+                    <li>
+                        <a href="javascript:void(0)"><img src="img/轮播图1.png" alt=""></a>
+                    </li>
+                    <li class="hide">
+                        <a href="javascript:void(0)"><img src="img/轮播图2.png" alt=""></a>
+                    </li>
+                    <li class="hide">
+                        <a href="javascript:void(0)"><img src="img/轮播图3.png" alt=""></a>
+                    </li>
+                    <li class="hide">
+                        <a href="javascript:void(0)"><img src="img/轮播图4.jpg" alt=""></a>
+                    </li>
+                </ul>
+            <ul class="chooseBtn">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div id="life">
+                <img src="img/生活特权.png" alt="">
+            </div>
+        </div>
+<!--轮播图结束-->
+<!--切换栏-->
+        <div  class="picLong" id="picLast">
+            <!--导航部分就开始-->
+            <div class="daohang">
+                <ul>
+                    <li  style="width: 70px">
+                        <a href="javascript:void(0)">最新</a>
+                        <div></div>
+                    </li>
+                    <li>|</li>
+                    <li style="width: 70px">
+                        <a href="javascript:void(0)">新闻</a>
+                        <div></div>
+                    </li>
+                    <li>|</li>
+                    <li style="width: 70px">
+                        <a href="javascript:void(0)">公告</a>
+                        <div></div>
+                    </li>
+                    <li>|</li>
+                    <li style="width: 70px">
+                        <a href="javascript:void(0)">活动</a>
+                        <div></div>
+                    </li>
+                </ul>
+
+                <a href="../游戏特权/游戏特权.html" id="more">更多</a>
+            </div>
+            <!--导航部分结束-->
+            <!--切换内容部分开始-->
+            <div class="content">
+                <ul>
+                    <li><a href="javascript:void(0)">[最新] 《天涯明月刀》全新版本好礼送不停！</a><span>05/10</span></li>
+                    <li><a href="javascript:void(0)">[最新] 《罗博造造》限号不删档，大战一触即发！</a><span>05/09</span></li>
+                    <li><a href="javascript:void(0)">[最新] 《红警OL手游》预约开启</a><span>05/04</span></li>
+                    <li><a href="javascript:void(0)">[最新] AR休闲手游《一起来捉妖》正式开约</a><span>05/04</span></li>
+                    <li><a href="javascript:void(0)">[最新] 预约《传奇世界3D》再战烽火沙城</a><span>05/04</span></li>
+                </ul>
+                <ul class="hide">
+                    <li><a href="javascript:void(0)">[新闻] 《天涯明月刀》全新版本好礼送不停！</a><span>05/10</span></li>
+                    <li><a href="javascript:void(0)">[新闻] 《罗博造造》限号不删档，大战一触即发！</a><span>05/09</span></li>
+                    <li><a href="javascript:void(0)">[新闻] 《红警OL手游》预约开启</a><span>05/04</span></li>
+                    <li><a href="javascript:void(0)">[新闻] AR休闲手游《一起来捉妖》正式开约</a><span>05/04</span></li>
+                    <li><a href="javascript:void(0)">[新闻] 预约《传奇世界3D》再战烽火沙城</a><span>05/04</span></li>
+                </ul>
+                <ul class="hide">
+                    <li><a href="javascript:void(0)">[公告] 游戏家及心悦俱乐部体系 升级完成公告</a><span>04/12</span></li>
+                    <li><a href="javascript:void(0)">[公告] 《英雄联盟》“神秘宝箱”活动礼物赠送开启公告</a><span>04/19</span></li>
+                    <li><a href="javascript:void(0)">[公告] “天涯明月刀特权专区”升级维护公告</a><span>04/17</span></li>
+                    <li><a href="javascript:void(0)">[公告] 游戏家及心悦俱乐部体系 升级维护公告</a><span>04/11</span></li>
+                    <li><a href="javascript:void(0)">[公告] 关于英雄联盟“神秘宝箱”活动故障修复公告</a><span>04/03</span></li>
+                </ul>
+                <ul class="hide">
+                    <li><a href="javascript:void(0)">[活动] 不屈少年复仇之路，现场心悦会员实力破案！</a><span>12/16</span></li>
+                    <li><a href="javascript:void(0)">[活动] 暂别ChinaJoy，盘点那些令玩家心悦的任性体验！</a><span>08/05</span></li>
+                    <li><a href="javascript:void(0)">[活动] 2016ChinaJoy，悦玩越HIGH！</a><span>07/26</span></li>
+                    <li><a href="javascript:void(0)">[活动] 第三届腾讯游戏玩家开放日将至，诸多福利抢先看！</a><span>05/04</span></li>
+                    <li><a href="javascript:void(0)">[活动] 陪你任性陪你飞！心悦航旅特权全新发布！</a><span>03/09</span></li>
+                </ul>
+            </div>
+            <!--切换内容部分结束-->
+        </div>
+<!--切换栏结束-->
+<!--手机游戏开始-->
+        <div class="cellGame">
+            <span>
+                <img src="img/手机游戏.png" alt="" id="cellGame">
+            </span>
+            <span>
+                <a href="../游戏特权/游戏特权.html">
+                    更多 >
+                </a>
+            </span>
+
+            <div class="picLong" id="cellLeft">
+                <a href="javascript:void(0)">
+                    <img src="img/picture01.jpg" alt="">
+                    <div class="desperation">
+                        《罗博造造》限号不删档，大战一触即发！
+                    </div>
+                </a>
+
+            </div>
+            <div  class="picLong" id="cellRight">
+                <a href="javascript:void(0)">
+                    <img src="img/picture04.jpg" alt="" style="width: 100%">
+                    <div class="desperation">
+                        《FIFA足球世界》预约C罗增礼，Q币、世界杯门票等你赢！
+                    </div>
+                </a>
+            </div>
+        </div>
+ <!--手机游戏结束-->
+        <!--快速入口开始-->
+        <div class="entrance">
+            <img src="img/快速入口.png" alt="">
+            <div class="quickPic">
+                <ul id="quickLeft">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/心悦推荐.png" alt="" style="width: 234px;height: 85px;">
+                        </a>
+                        <div class="hide">
+                            <a href="javascript:void(0)">
+                                <img src="img/心悦推荐-移入.png" alt="" style="width: 234px;height: 85px;">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/新手专区.png" alt="" style="width: 234px;height: 85px;">
+                        </a>
+                        <div class="hide">
+                            <a href="javascript:void(0)">
+                                <img src="img/新手专区-移入.png" alt="" style="width: 234px;height: 85px;">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/帮助中心.png" alt="" style="width: 234px;height: 85px;">
+                        </a>
+                        <div class="hide">
+                            <a href="javascript:void(0)">
+                                <img src="img/帮助中心-移入.png" alt="" style="width: 234px;height: 85px;">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="img/心悦论坛.png" alt="" style="width: 234px;height: 85px;">
+                        </a>
+                        <div class="hide">
+                            <a href="javascript:void(0)">
+                                <img src="img/心悦论坛-移入.png" alt="" style="width: 234px;height: 85px;">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <!--<ul id="quickRight">-->
+                    <!--<li  class="hide">-->
+                        <!--<a href="javascript:void(0)">-->
+                            <!--<img src="img/心悦推荐-移入.png" alt="" style="width: 234px;height: 85px;">-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li  class="hide">-->
+                        <!--<a href="javascript:void(0)">-->
+                            <!--<img src="img/新手专区-移入.png" alt="" style="width: 234px;height: 85px;">-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li  class="hide">-->
+                        <!--<a href="javascript:void(0)">-->
+                            <!--<img src="img/帮助中心-移入.png" alt="" style="width: 234px;height: 85px;">-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li  class="hide">-->
+                        <!--<a href="javascript:void(0)">-->
+                            <!--<img src="img/心悦论坛-移入.png" alt="" style="width: 234px;height: 85px;">-->
+                        <!--</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            </div>
+        </div>
+        <!--快速入口结束-->
+    </div>
+
+</div>
+<!--主题内容部分结束-->
+
+<!--右侧栏开始-->
+<div id="g_rbar">
+    <ul class="u_rbar_list">
+        <li class="rb1"><a id="returnTop">top</a></li>
+        <li class="rb4"><a target="_blank" href="javascript:void(0)">在线管家服务</a></li>
+        <li class="rb2"><a id="Dcode">二维码</a>
+            <span id="DcodeBox" style="display:none;"><img src="../生活特权/images/心悦app.png" width="160px" height="190px" alt="" /></span>
+        </li>
+        <li class="rb3"><a target="_blank" href="javascript:void(0)">帮助中心</a></li>
+    </ul>
+</div>
+<!--右侧栏结束-->
+
+
+
+<!--底部开始-->
+    <div class="bottom" style="background-color:#eaeaea;">
+            <div class="bottomPic">
+                <img src="img/底部.png" alt="">
+            </div>
+            <div class="bottomText w">
+                <a href="javascript:void(0)">腾讯互动娱乐</a>
+                <span>|</span>
+                <a href="javascript:void(0)">服务条款</a>
+                <span>|</span>
+                <a href="javascript:void(0)">广告服务</a>
+                <span>|</span>
+                <a href="javascript:void(0)">腾讯游戏招聘</a>
+                <span>|</span>
+                <a href="javascript:void(0)">腾讯游戏客服</a>
+                <span>|</span>
+                <a href="javascript:void(0)">游戏地图</a>
+                <span>|</span>
+                <a href="javascript:void(0)">成长守护平台</a>
+                <span>|</span>
+                <a href="javascript:void(0)">商务合作</a>
+                <span>|</span>
+                <a href="javascript:void(0)">网站导航</a>
+                <br>
+                <p>COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+                <a href="javascript:void(0)">腾讯公司 版权所有</a>
+
+
+
+
+            </div>
+    </div>
+<!--底部结束-->
+</body>
+
+
+
+</html>

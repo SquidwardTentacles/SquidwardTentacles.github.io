@@ -1,0 +1,838 @@
+/*初始化开始*/
+body,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+b,
+i,
+u,
+s,
+em,
+ins,
+del,
+strong,
+ul,
+ol,
+li,
+span{
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: #52505a;
+}
+img {
+    vertical-align: middle;
+    border: 0 none;
+}
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+body {
+    font-size: 14px;
+    border: 0 none;
+    background-color: #fafafa;
+    color:#52505a;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+.w {
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+}
+a:hover {
+    color: #f06a45;
+}
+/*初始化结束*/
+/*TOP属性开始*/
+.top {
+    width: 100%;
+    height: 36px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+/*登陆按钮悬浮变色*/
+#login:hover {
+    color:#f06a45;
+}
+
+#login {
+    cursor: pointer;
+    position: absolute;
+    right:100px;
+    font-size: 12px;
+    line-height: 36px;
+}
+#map span a {
+    display: block;
+    height: 20px;
+    width: 70px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+#jianxi {
+    width: 72px;
+    height: 6px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+#tequanditu {
+    width: 400px;
+    height: 210px;
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    top: 37px;
+    z-index: 999;
+
+}
+#tequanditu ul {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 210px;
+    /*margin-right: 15px;*/
+}
+#tequanditu ul li {
+    background-color:#fff;
+}
+#tequanditu ul li:first-child {
+    background-color: rgba(144,144,144,0.2);
+    height: 30px;
+    line-height: 30px;
+}
+#tequanditu ul li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+#tequanditu ul:nth-child(4) li:nth-child(2) a {
+    color: #f06a45;
+}
+#tequanditu ul li {
+    padding-left: 10px;
+}
+a:hover {
+    color: #f06a45;
+}
+#map span {
+    cursor: pointer;
+}
+/*TOP属性结束*/
+/*Nav属性开始*/
+.header{
+    background-color: #fafafa;
+    height: 150px;
+    border-bottom: #468dff 2px solid;
+    border-top: #ececec 1px solid;
+}
+.head-bottom {
+    margin: 0 auto ;
+    height: 150px ;
+}
+.logo {
+    width: 100% ;
+    height : 100px ;
+    line-height : 100px ;
+    margin-bottom: 8px;
+}
+.head-bottom .nav{
+    height:42px ;
+}
+.nav ul {
+    height : 42px ;
+
+}
+.nav ul li:first-child {
+    margin-right: 8px;
+}
+.nav ul li:nth-child(2) {
+    margin-right: 8px;
+}
+.nav ul li {
+    float : left ;
+    width : 114px ;
+    height : 100% ;
+}
+.nav ul li a {
+    width: 114px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #52505a;
+}
+.bgcolor{
+    background-color: #468dff;
+    color: #fff;
+}
+.li-game .game a{
+    font-size: 12px;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    color: #52505a;
+}
+.nav ul .li-game .game {
+    width: 110px;
+    height: 160px;
+    position: absolute;
+    bottom: -162px;
+    left: 0;
+    z-index: 100;
+    background: #fafafa;
+    display: none;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid #468dff;
+    border-top: 0 none;
+}
+.service-li .service a {
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #52505a;
+
+}
+.nav ul .service-li .service{
+    width: 110px;
+    height: 42px;
+    left: 0;
+    background: #fafafa;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid #468dff;
+    border-top: 0 none;
+}
+.nav ul .li-game,
+.service-li
+{
+    position: relative;
+}
+.li-game .game ul li{
+    width: 100px;
+    height: 160px;
+    background: #fafafa;
+    overflow: hidden;
+    border: 2px solid #468dff;
+    border-top: 0 none;
+}
+/*Nav属性结束*/
+
+
+/*遮罩层*/
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 998;
+    /*display: none;*/
+}
+/*QQ登陆框的开始*/
+
+#QQ-login{
+    width :650px;
+    height: 390px;
+    background-color:white;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top: -162px;
+    margin-left:  -325px;
+    z-index: 999;
+
+}
+/*登陆顶部的开始*/
+#login-box1{
+
+    height:48px ;
+    width: 650px;
+    border-bottom: 1px solid #468dff ;
+}
+
+#login-box1 li{
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+
+}
+#qq-denglu{
+    border-top: 3px solid #468dff;
+    border-bottom: 1px solid white;
+}
+#wx-denglu{
+    border-top: 3px solid white
+}
+#login-box1 #gaunbi{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+
+    right: 20px;
+    font-size: 35px;
+    color:#666
+    /*margin-right: 20px;*/
+}
+#login-box2{
+    width: 650px;
+    height: 325px;
+    position: relative;
+}
+#wx-BigBox{
+    display: none;
+}
+/*qq登陆图片的开始*/
+#login-box3 {
+    position: absolute;
+    width: 250px;
+    height: 171px;
+    top: 70px;
+    left: 30px;
+}
+#login-box3 img{
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+/*QQ里面的文字*/
+#login-box3 p{
+    width: 250px;
+    height: 45px;
+    position: absolute;
+    text-align: center;
+    line-height: 25px;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    color:#666;
+
+}
+/*右边二维码的开始*/
+#QQ-ewm{
+    width: 365px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+#QQ-ewm .aq-login{
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 120px;
+}
+#QQ-ewm .qq-sj{
+    position: absolute;
+    top: 35px;
+    left: 70px;
+    height: 30px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 16px;
+}
+#QQ-ewm .qq-sj a{
+    color:#468dff ;
+}
+#QQ-ewm #login-ewm{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: url("../img/erweima.png") no-repeat;
+    top: 120px;
+    left: 115px;
+    border: 1px solid #666;
+    background-size: 120px;
+
+}
+#zhuCe{
+    position: absolute;
+    bottom: 20px;
+    left: 130px;
+    color: #666;
+}
+#zhuCe li{
+    float: left;
+    margin-right: 6px;
+}
+#login-JLT{
+    position: absolute;
+    bottom: 30px;
+    left: 165px;
+    display: none;
+}
+/*右边二维码结束*/
+/*微信模块的开始*/
+#wx-BigBox{
+    width: 650px;
+    height: 325px;
+    position: relative;
+}
+#wx-box1 {
+    position: absolute;
+    width: 250px;
+    height: 171px;
+    top: 70px;
+    left: 30px;
+}
+#wx-box1 img{
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+#wx-box1 p{
+    width: 250px;
+    height: 45px;
+    position: absolute;
+    text-align: center;
+    line-height: 23px;
+    bottom: 30px;
+    right: 5px;
+    font-size: 12px;
+    color:#666;
+
+}
+/*微信右边二维码开始*/
+#wx-ewm{
+    width: 365px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+#wx-ewm .wx-login{
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    left: 108px;
+}
+#wx-ewm #wxEwm{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: url("../img/erweima.png") no-repeat;
+    top: 45px;
+    left: 95px;
+    border: 1px solid #e2e2e2;
+    background-size: 200px;
+}
+#tuoYuan{
+    position: absolute;
+    width: 250px;
+    height: 57px;
+    background-color: #dddddd;
+    border-radius: 35px;
+    bottom: 0;
+    right: 50px ;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+    color:#666 ;
+}
+/*微信右边二维码结束*/
+/*微信模块的结束*/
+
+
+/*大轮播图开始*/
+.lunbotu {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+.pic1 li a {
+    display: block;
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.chooseBtn li {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: skyblue;
+    position: absolute;
+    top: 420px;
+    z-index: 100;
+}
+.chooseBtn li:first-child {
+    background-color: red;
+}
+#lunbotu .chooseBtn li:first-child {
+    background-color: red;
+}
+.chooseBtn li:nth-child(1) {
+    left: 50%;
+    margin-left: -20px;
+}
+.chooseBtn li:nth-child(2) {
+    left: 50%;
+}
+.chooseBtn li:nth-child(3) {
+    left: 50%;
+    margin-left:20px;
+}
+.denglu {
+    height: 360px;
+    width: 285px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    /*background-color: rgb(187, 200, 222);*/
+    z-index: 2;
+    background-color: #fff;
+}
+.denglu .loginBar{
+    position: absolute;
+    height: 50px;
+    width: 250px;
+    left: 17px;
+    top: 160px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 3;
+}
+.denglu .loginBar a {
+    display: block;
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.denglu .loginBar a:first-child {
+    z-index: 4;
+    background: url("../img/精灵图.png") -220px -132px no-repeat;
+}
+.denglu .loginBar a:nth-child(2) {
+    z-index: 5;
+    background: url("../img/精灵图.png") -220px -194px no-repeat;
+}
+/*大轮播图结束*/
+
+/*中间内容开始*/
+.mainBox {
+    background-color: #fafafa;
+    height: 950px;
+    margin-top: 20px;
+}
+/*大图图片属性*/
+.picLong {
+    height: 220px;
+    width: 460px;
+    border: 1px solid #ccc;
+}
+#lunbotu {
+    float: left;
+    position: relative;
+    margin-right: 28px;
+    overflow: hidden;
+}
+#lunbotu ul li a {
+    display: block;
+    height: 220px;
+    width: 460px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+#lunbotu div {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+}
+#picLast {
+    float: left;
+    position: relative;
+}
+
+/*切换栏部分开始*/
+/*导航部分开始*/
+.daohang {
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f3f3f5;
+}
+.daohang div {
+    height: 10px;
+    width: 72px;
+    background: url("../img/精灵图.png") no-repeat -114px 0px;
+    position: absolute;
+    top: 37px;
+    display: none;
+}
+.daohang ul li{
+    float: left;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+}
+#more {
+    float: right;
+    font-size: 14px;
+    line-height: 44px;
+    margin-right: 20px;
+}
+#more:hover {
+    color:#468dff;
+}
+.daohang li a {
+    display: block;
+    height: 44px;
+    width: 70px;
+}
+.daohang li a:hover {
+    color:#468dff;
+}
+/*导航部分结束*/
+/*内容部分开始*/
+.content {
+    padding: 15px 20px 0;
+}
+.content li {
+    width: 420px;
+    height: 30px;
+    line-height: 30px;
+}
+.content li a{
+    float: left;
+}
+.content li span {
+    float: right;
+}
+/*内容部分结束*/
+/*切换栏部分结束*/
+
+
+/*轮播图部分开始*/
+#lunbotu .chooseBtn li:nth-child(1) {
+    left: 50%;
+    margin-left: -30px;
+    top: 205px;
+}
+#lunbotu .chooseBtn li:nth-child(2) {
+    left: 50%;
+    margin-left: -10px;
+    top: 205px;
+}
+#lunbotu .chooseBtn li:nth-child(3) {
+    left: 50%;
+    margin-left:10px;
+    top: 205px;
+}
+#lunbotu .chooseBtn li:nth-child(4) {
+    left: 50%;
+    margin-left: 30px;
+    top: 205px;
+}
+/*轮播图部分结束*/
+
+/*手机游戏部分开始*/
+.cellGame span a {
+    display: block;
+    width: 40px;
+    height: 16px;
+    /*background-color: pink;*/
+    font-size: 12px;
+    line-height: 16px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 70px;
+}
+#cellGame {
+    float: left;
+}
+#cellLeft {
+    float: left;
+    position: relative;
+    margin-right: 28px;
+}
+#cellRight {
+    float: left;
+    position: relative;
+}
+#cellLeft a,#cellRight a {
+    display: block;
+    width: 460px;
+    height: 220px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.desperation {
+    position: absolute;
+    height: 40px;
+    width: 460px;
+    bottom: 0;
+    z-index: 2;
+    font-size: 14px;
+    line-height: 40px;
+    background-color: rgba(200,200,200,0.7);
+    text-align: center;
+}
+/*手机游戏部分结束*/
+
+/*快速入口部分开始*/
+.quickPic {
+    position: relative;
+    width: 939px;
+    height: 85px;
+    border: 1px solid #ccc;
+    margin-top: 40px;
+}
+.quickPic ul li {
+    width: 234px;
+    height: 85px;
+    position: absolute;
+    border-right: 1px solid #ccc;
+}
+#quickLeft li {
+    z-index: 1;
+}
+/*#quickRight li {*/
+    /*z-index: 2;*/
+/*}*/
+.quickPic ul li:last-child {
+    border: 0 none;
+    right: 0;
+}
+.quickPic ul li:nth-child(2) {
+    left: 235px;
+}
+.quickPic ul li:nth-child(3) {
+    right: 234px;
+}
+.quickPic ul li a {
+    display: block;
+    width: 234px;
+    height: 85px;
+}
+#quickLeft div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*快速入口部分结束*/
+/*中间内容结束*/
+
+
+
+/*底部开始*/
+.bottom{
+    position: relative;
+    height: 480px;
+    width: 100%;
+}
+.bottomText {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 18px;
+}
+/*底部结束*/
+/*右侧栏开始*/
+#g_rbar {
+    position:fixed;
+    z-index:30;
+    right:0;
+    top:70%;
+    margin-top:-72px;
+    width:44px;
+    height:152px;
+    display:block;
+}
+.u_rbar_list li{
+    margin-top:10px;
+}
+.u_rbar_list li a{
+    width:44px;
+    height:44px;
+    display:block;
+    text-indent:-9999px;
+    background: url("../../生活特权/images/精灵图2.png") no-repeat;;
+}
+.u_rbar_list li.rb1 a{
+    background-position:-49px -241px;
+    cursor:pointer;
+}
+.u_rbar_list li.rb2 a{
+    background-position:-49px -291px;
+}
+.u_rbar_list li.rb3 a{
+    background-position:-49px -341px;
+}
+.u_rbar_list li.rb4 a{
+    background-position:-305px -424px;
+}
+.u_rbar_list li.rb1 a:hover{
+    background-position:0 -241px;
+}
+.u_rbar_list li.rb2 a:hover{
+    background-position:0 -291px;
+}
+.u_rbar_list li.rb3 a:hover{
+    background-position:0 -341px;
+}
+.u_rbar_list li.rb4 a:hover{
+    background-position:-351px -424px;
+}
+.u_rbar_list li.rb2 span{
+    position:absolute;
+    top:-15px;
+    right:60px;
+    padding:3px;
+    background:#fff;
+    border:#f06a45 2px solid;
+    border-radius: 5px;
+}
+
+/*右侧栏结束*/

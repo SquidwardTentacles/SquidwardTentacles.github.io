@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/外联样式.css">
+    <script src="jQuery/jquery-1.12.4.js"></script>
+    <script src="js/调用JQ.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div class="top" id="top" >
+    <!--头部版心-->
+    <div class="w">
+        <!--点击出现登陆窗-->
+        <span id="login">您好,请登陆</span>
+        <!--特权地图展开及收回    开始-->
+        <div id="map">
+                    <span>
+                        <a href="javascript:void(0)">特权地图</a>
+                    </span>
+            <div id="jianxi"></div>
+            <div class="hide" id="tequanditu" >
+                <ul>
+                    <li>生活特权</li>
+                    <li>
+                        <a href="javascript:void(0)">京东购物优惠福</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">深航专享福利</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">悦享绿钻</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">心悦观影特权</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>游戏特权</li>
+                    <li>
+                        <a href="javascript:void(0)">心悦精品推荐</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">心悦手游专区</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">心悦新游专区</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">心悦页游专区</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">游戏礼包</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>服务特权</li>
+                    <li>
+                        <a href="javascript:void(0)">会员专线</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">心悦限时处理</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">被盗找回</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">误操作回复</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">点亮尊贵图标</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>其他</li>
+                    <li><a href="个人中心.html">个人中心</a></li>
+                    <li><a href="javascript:void(0)">心悦任务</a></li>
+                    <li><a href="javascript:void(0)">心悦体系</a></li>
+                    <li><a href="javascript:void(0)">召唤心悦</a></li>
+                    <li><a href="javascript:void(0)">心悦论坛</a></li>
+                    <li><a href="javascript:void(0)">帮助中心</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--特权地图展开及收回    结束-->
+    </div>
+</div>
+
+<!--导航栏开始-->
+<div class="header">
+    <div class="head-bottom w">
+        <div class="logo">
+            <a href="javascript:void(0)">
+                <h1>
+                    <img src="img/logo.jpg" alt="">
+                </h1>
+            </a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class = "first">
+                    <a href="../主页部分/主页部分.html">首页</a></li>
+                <li class="li-game">
+                    <a href="../游戏特权/游戏特权.html">游戏特权</a>
+                    <div class="game">
+                        <a href="javascript:void(0)">心悦手游专区</a>
+                        <a href="javascript:void(0)">新游戏体验专区</a>
+                        <a href="javascript:void(0)">精品游戏推荐</a>
+                        <a href="javascript:void(0)">传奇悦享会</a>
+                    </div>
+                </li>
+                <li class="service-li" id="li-service">
+                    <a href="../服务特权/服务特权.html">服务特权</a>
+                    <div class="service">
+                        <a href="javascript:void(0)">400服务专区</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="../生活特权/生活特权.html">生活特权</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">新闻中心</a>
+                </li>
+                <li class="bgcolor">
+                    <a href="../个人中心/个人中心.html"  style="color: white">个人中心</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">会员体系</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">G分</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--导航栏结束-->
+<!--内容开始-->
+<div class="w content clearfix">
+    <div class="con-l">
+        <div class="l_attend">
+            <div class="l_head">
+                <span class="img1"></span>
+            </div>
+            <div class="l_bd">
+                <a href="javascript:void(0)" class="btn">登录查看我的信息</a>
+                <p class="left_p">腾讯游戏心悦俱乐部：</p>
+                <p>为你提供丰富的游戏、生活、服务等专属特权</p>
+            </div>
+        </div>
+        <div class="l_person">
+            <ul>
+                <li class="pn01"><a href="javascript:void(0)"><i class="s"></i>个人中心<i class="arr"></i></a></li>
+                <li class="pn02"><a href="javascript:void(0)"><i class="s"></i>我的消息<i></i></a></li>
+                <li class="pn03"><a href="javascript:void(0)"><i class="s"></i>我的成长值<i></i></a></li>
+                <li class="pn04"><a href="javascript:void(0)"><i class="s"></i>我的G分<i></i></a></li>
+                <li class="pn05"><a href="javascript:void(0)"><i class="s"></i>个人资料<i></i></a></li>
+                <li class="pn06"><a href="javascript:void(0)"><i class="s"></i>心悦任务<i></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="con-r">
+        <div class="r_login">
+            <a href="javascript:void(0)" id="z1">
+                <span class="s">登录</span>
+                <br>
+                <span>查看我的消息</span>
+            </a>
+        </div>
+        <div class="r_login_none">
+            <a href="javascript:void(0)" id="z2">
+                <span class="s">登录</span>
+                <br>
+                <span>查看我的消息</span>
+            </a>
+        </div>
+        <!--点击个人中心显示的页面-->
+        <div class="r_person clearfix">
+            <div class="r-top">
+                <ul>
+                    <li>
+                        <div>等级</div>
+                        <p>L0</p>
+                    </li>
+                    <li>
+                        <div>成长值</div>
+                        <p>***</p>
+                    </li>
+                    <li>
+                        <div>排名升降</div>
+                        <p>***</p>
+                    </li>
+                </ul>
+                <div class="top-btn">
+
+                    <a href="javascript:void(0)" class="btn-1"><i></i>消息</a>
+                    <a href="javascript:void(0)" class="btn-2"><i></i>任务</a>
+                    <a href="javascript:void(0)" class="btn-3"><i></i>优惠券</a>
+                </div>
+            </div>
+            <div class="r-con">
+                <div class="r-con-T">
+                    <i></i>
+                    <h2>专属周期礼包</h2>
+                    <a href="javascript:void(0)" class="zzq-a">?</a>
+                    <a href="javascript:void(0)" class="zzq-b"></a>
+                </div>
+                <div class="r-con-C clearfix">
+                    <ul>
+                        <li><i></i><img src="img/pic-act-gy.jpg" alt=""><a href="javascript:void(0)">腾讯视频vip福利</a></li>
+                        <li><i></i><img src="img/pic-act-mt.jpg" alt=""><a href="javascript:void(0)">领取美团外卖大礼包</a></li>
+                        <li><i></i><img src="img/pic-act-whs.png" alt=""><a href="javascript:void(0)">旧手机换新手机，心悦再送200元</a></li>
+                        <li><i></i><img src="img/pic_act_xc.png" alt=""><a href="javascript:void(0)">携程十种券大礼包</a></li>
+                        <li><b></b></li>
+                    </ul>
+                </div>
+                <div class="r-con-F">
+                    <div class="rf-head">
+                        <i></i>
+                        <h2>可参与的活动</h2>
+                    </div>
+                    <div class="rf-con clearfix">
+                        <ul>
+                            <li><a href="javascript:void(0)" class="zzq"><img src="img/1525302715474906120.jpg" alt=""></a>
+                                <a href="javascript:void(0)" class="s">预约《传奇世界3D》再战烽火沙城</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="zzq"><img src="img/2.jpg" alt=""></a>
+                                <a href="javascript:void(0)" class="s">CF拿道具畅玩新版本</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="zzq"><img src="img/3.jpg" alt=""></a>
+                                <a href="javascript:void(0)" class="s">剑灵技能输出简化开启</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="r-fool">
+                <div class="rf-t">
+                    <i></i>
+                    <h2>成长值</h2>
+                    <ul>
+                        <li>本周</li>
+                        <li>上周</li>
+                    </ul>
+                </div>
+                <div class="rf-f">
+                    <div class="table">
+                        <p>本周成长值较少，图表无法绘制</p>
+                        <a href="javascript:void(0)">获取更多成长值</a>
+                    </div>
+                    <div class="yuan"></div>
+                </div>
+            </div>
+        </div>
+        <!--点击个人中心显示的页面-->
+
+    </div>
+</div>
+<!--内容结束-->
+<!--右侧栏开始-->
+<div id="r_nav">
+    <ul>
+        <li class="li1"><a href="javascrip:(0);" >TOP</a></li>
+        <li class="li2"><a href="javascript:void(0)">在线管家服务</a></li>
+        <li class="li3">
+            <a href="javascript:void(0)">二维码</a>
+            <span id="app_ewm">
+                <img src="img/code_rbar.png" alt="">
+            </span>
+        </li>
+        <li class="li4"><a href="javascript:void(0)">帮助中心</a></li>
+    </ul>
+</div>
+<!--右侧栏结束-->
+
+
+<!--底部开始-->
+<div class="bottom" style="background-color:#eaeaea;">
+    <div class="bottomPic">
+        <img src="img/底部.png" alt="">
+    </div>
+    <div class="bottomText w">
+        <a href="javascript:void(0)">腾讯互动娱乐</a>
+        <span>|</span>
+        <a href="javascript:void(0)">服务条款</a>
+        <span>|</span>
+        <a href="javascript:void(0)">广告服务</a>
+        <span>|</span>
+        <a href="javascript:void(0)">腾讯游戏招聘</a>
+        <span>|</span>
+        <a href="javascript:void(0)">腾讯游戏客服</a>
+        <span>|</span>
+        <a href="javascript:void(0)">游戏地图</a>
+        <span>|</span>
+        <a href="javascript:void(0)">成长守护平台</a>
+        <span>|</span>
+        <a href="javascript:void(0)">商务合作</a>
+        <span>|</span>
+        <a href="javascript:void(0)">网站导航</a>
+        <br>
+        <p>COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+        <a href="javascript:void(0)">腾讯公司 版权所有</a>
+
+    </div>
+</div>
+<!--底部结束-->
+
+<!--登陆框与遮罩层开始-->
+<div class="bomb">
+    <!--遮罩层-->
+    <div class="mask"></div>
+    <div id="QQ-login" >
+        <p class="close"></p>
+        <ul id="login-box1">
+            <li id="qq-denglu" ><p>QQ登录</p></li>
+            <li id="wx-denglu"><p>微信登录</p></li>
+        </ul>
+        <div id="login-box2">
+            <div id="login-box3">
+                <img src="img/qq-icon.png" alt="">
+                <p>QQ、微信将互为独立的体系帐号<br>
+                    分别独立获得成长值、体系资格、等级权益。</p>
+            </div>
+            <!--右边二维码-->
+            <div id="QQ-ewm">
+                <p class="aq-login">快速安全登录</p>
+                <p class="qq-sj">请使用<a href="javascript:void(0)">QQ手机版</a>扫描二维码，<br>
+                    安全登录，防止盗号。 </p>
+                <!--<img id="login-ewm" src="二维码.png" alt="">-->
+                <div id="login-box4">
+                    <span id="login-ewm" ><img src="img/erwm.png" height="132px" width="132px" alt=""></span>
+                    <img id="login-JLT" src="img/登陆精灵图.png" alt="">
+                </div>
+                <ul id="zhuCe" >
+                    <li><a href="javascript:void(0)">帐号密码登录  |</a></li>
+                    <li><a href="javascript:void(0)">注册新帐号  |</a></li>
+                    <li> <a href="javascript:void(0)">意见反馈</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <!--QQ登陆页面的结束-->
+        <!--微信登陆页面的开始-->
+
+        <div id="wx-BigBox">
+            <div id="wx-box1">
+                <img src="img/wx-icon.png" alt="">
+                <p>QQ、微信将互为独立的体系帐号<br>
+                    分别独立获得成长值、体系资格、等级权益。</p>
+            </div>
+            <!--右边二维码-->
+            <div id="wx-ewm">
+                <p class="wx-login">安全登录,防止被盗</p>
+                <span id="wxEwm"></span>
+            </div>
+            <div id="tuoYuan">
+                请使用微信扫描二维码登录    <br>
+                “心悦俱乐部”
+            </div>
+
+        </div>
+
+    </div>
+    <!--微信登陆页面的结束-->
+
+</div>
+<!--登陆框与遮罩层结束-->
+</body>
+
+</html>

@@ -1,0 +1,469 @@
+/*初始化开始*/
+body,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+b,
+i,
+u,
+s,
+em,
+ins,
+del,
+strong,
+ul,
+ol,
+li,
+span{
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: #52505a;
+}
+img {
+    vertical-align: middle;
+    border: 0 none;
+}
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+body {
+    font-size: 14px;
+    border: 0 none;
+    background-color: #fafafa;
+    color:#52505a;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+.w {
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+}
+a:hover {
+    color: #f06a45;
+}
+/*初始化结束*/
+/*TOP属性开始*/
+.top {
+    width: 100%;
+    height: 36px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+/*登陆按钮悬浮变色*/
+#login:hover {
+    color:#f06a45;
+}
+
+#login {
+    cursor: pointer;
+    position: absolute;
+    right:100px;
+    font-size: 12px;
+    line-height: 36px;
+}
+#map span a {
+    display: block;
+    height: 20px;
+    width: 70px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+#jianxi {
+    width: 72px;
+    height: 6px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+#tequanditu {
+    width: 400px;
+    height: 210px;
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    top: 37px;
+    z-index: 999;
+
+}
+#tequanditu ul {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 210px;
+    /*margin-right: 15px;*/
+}
+#tequanditu ul li {
+    background-color:#fff;
+}
+#tequanditu ul li:first-child {
+    background-color: rgba(144,144,144,0.2);
+    height: 30px;
+    line-height: 30px;
+}
+#tequanditu ul li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+#tequanditu ul:nth-child(4) li:nth-child(2) a {
+    color: #f06a45;
+}
+#tequanditu ul li {
+    padding-left: 10px;
+}
+a:hover {
+    color: #f06a45;
+}
+#map span {
+    cursor: pointer;
+}
+/*TOP属性结束*/
+/*Nav属性开始*/
+.header{
+    background-color: #fafafa;
+    height: 150px;
+    border-bottom: #468dff 2px solid;
+    border-top: #ececec 1px solid;
+}
+.head-bottom {
+    margin: 0 auto ;
+    height: 150px ;
+}
+.logo {
+    width: 100% ;
+    height : 100px ;
+    line-height : 100px ;
+    margin-bottom: 8px;
+}
+.head-bottom .nav{
+    height:42px ;
+}
+.nav ul {
+    height : 42px ;
+
+}
+.nav ul li:first-child {
+    margin-right: 8px;
+}
+.nav ul li:nth-child(2) {
+    margin-right: 8px;
+}
+.nav ul li {
+    float : left ;
+    width : 114px ;
+    height : 100% ;
+}
+.nav ul li>a {
+    width: 114px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    text-align: center;
+    /*color: #52505a;*/
+}
+.bgcolor{
+    background-color: #468dff;
+}
+.li-game .game a{
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #52505a;
+}
+.nav ul .li-game .game {
+    width: 110px;
+    height: 160px;
+    position: absolute;
+    bottom: -162px;
+    left: 0;
+    z-index: 100;
+    background: #fafafa;
+    display: none;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid #468dff;
+    border-top: 0 none;
+}
+.service-li .service a {
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #52505a;
+}
+.nav ul .service-li .service{
+    width: 110px;
+    height: 42px;
+    left: 0;
+    background: #fafafa;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid #468dff;
+    border-top: 0 none;
+}
+.nav ul .li-game,
+.service-li
+{
+    position: relative;
+}
+.li-game .game ul li{
+    width: 100px;
+    height: 160px;
+    background: #fafafa;
+    overflow: hidden;
+    border: 2px solid #468dff;
+    border-top: 0 none;
+}
+/*Nav属性结束*/
+
+/*遮罩层*/
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    /*display: none;*/
+}
+/*QQ登陆框的开始*/
+
+#QQ-login{
+    width :650px;
+    height: 390px;
+    background-color:white;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top: -162px;
+    margin-left:  -325px;
+    z-index: 999;
+
+}
+/*登陆顶部的开始*/
+#login-box1{
+
+    height:48px ;
+    width: 650px;
+    border-bottom: 1px solid #468dff ;
+}
+
+#login-box1 li{
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+
+}
+#qq-denglu{
+    border-top: 3px solid #468dff;
+    border-bottom: 1px solid white;
+}
+#wx-denglu{
+    border-top: 3px solid white
+}
+#login-box1 #gaunbi{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+
+    right: 20px;
+    font-size: 35px;
+    color:#666
+    /*margin-right: 20px;*/
+}
+#login-box2{
+    width: 650px;
+    height: 325px;
+    position: relative;
+}
+#wx-BigBox{
+    display: none;
+}
+/*qq登陆图片的开始*/
+#login-box3 {
+    position: absolute;
+    width: 250px;
+    height: 171px;
+    top: 70px;
+    left: 30px;
+}
+#login-box3 img{
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+/*QQ里面的文字*/
+#login-box3 p{
+    width: 250px;
+    height: 45px;
+    position: absolute;
+    text-align: center;
+    line-height: 25px;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    color:#666;
+
+}
+/*右边二维码的开始*/
+#QQ-ewm{
+    width: 365px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+#QQ-ewm .aq-login{
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 120px;
+}
+#QQ-ewm .qq-sj{
+    position: absolute;
+    top: 35px;
+    left: 70px;
+    height: 30px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 16px;
+}
+#QQ-ewm .qq-sj a{
+    color:#468dff ;
+}
+#QQ-ewm #login-ewm{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: url("../img/erweima.png") no-repeat;
+    top: 120px;
+    left: 115px;
+    border: 1px solid #666;
+    background-size: 120px;
+
+}
+#zhuCe{
+    position: absolute;
+    bottom: 20px;
+    left: 130px;
+    color: #666;
+}
+#zhuCe li{
+    float: left;
+    margin-right: 6px;
+}
+#login-JLT{
+    position: absolute;
+    bottom: 30px;
+    left: 165px;
+    display: none;
+}
+/*微信模块的开始*/
+#wx-BigBox{
+    width: 650px;
+    height: 325px;
+    position: relative;
+}
+#wx-box1 {
+    position: absolute;
+    width: 250px;
+    height: 171px;
+    top: 70px;
+    left: 30px;
+}
+#wx-box1 img{
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+#wx-box1 p{
+    width: 250px;
+    height: 45px;
+    position: absolute;
+    text-align: center;
+    line-height: 23px;
+    bottom: 30px;
+    right: 5px;
+    font-size: 12px;
+    color:#666;
+
+}
+/*微信右边二维码开始*/
+#wx-ewm{
+    width: 365px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+#wx-ewm .wx-login{
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    left: 108px;
+}
+#wx-ewm #wxEwm{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: url("../img/erweima.png") no-repeat;
+    top: 45px;
+    left: 95px;
+    border: 1px solid #e2e2e2;
+    background-size: 200px;
+}
+#tuoYuan{
+    position: absolute;
+    width: 250px;
+    height: 57px;
+    background-color: #dddddd;
+    border-radius: 35px;
+    bottom: 0;
+    right: 50px ;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+    color:#666 ;
+}

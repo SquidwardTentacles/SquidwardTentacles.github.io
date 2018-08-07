@@ -1,0 +1,63 @@
+/*初始化开始*/
+body,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+b,
+i,
+u,
+s,
+em,
+ins,
+del,
+strong,
+ul,
+ol,
+li,
+span{
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    vertical-align: middle;
+    border: 0 none;
+}
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+body {
+    font-size: 14px;
+    border: 0 none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+.w {
+    width: 85%;
+    position: relative;
+    margin: 0 auto;
+}
+a:hover {
+    color: #f06a45;
+}
+/*初始化结束*/
